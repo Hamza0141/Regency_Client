@@ -1,0 +1,77 @@
+@media (min-width: 992px) and (max-width:1199px) {
+   /* Navbar */
+   .navbar .nav-item {
+      margin-right: 12px;
+   }
+   .navbar .nav-item .nav-link {
+      font-size: 12px;
+   }
+   /* About */
+   .box-skew-right {
+      padding-left: 65px;
+   }
+   .box-skew-right img {
+      right: -35px;
+   }
+   /* Newsletter */
+   .box-skew-area-right {
+      width: 130%;
+   }
+   /* Working Process */
+   .working-box-wrapper [class*=col]:nth-child(2) {
+      margin: 0 -5px;
+   }
+   .working-box-wrapper .working-single-box:before,
+   .working-box-wrapper .working-single-box:after {
+     display: none;
+   }
+   .working-box-wrapper .working-single-box:after {
+      right: -45px;
+   }
+   .working-box-wrapper .working-single-box.bg-red-light:after {
+      right: -69px;
+   }
+   /* Pricing table */
+   .ts-pricing-table-standard .plan .plan-price:after {
+      border-width: 40px 145px 0 145px;
+   }
+   .ts-slider-area.owl-carousel .owl-nav button{
+      left: 0;
+      width: 40px;
+   }
+   .ts-slider-area.owl-carousel .owl-nav button.owl-next{
+      right: 0;
+   }
+   .box-skew-left:after{
+      left: 44px;
+   }
+   .working-box-wrapper .working-content-wrapper {
+      padding-left: 50px;
+   }
+
+   /*--------------------- index 2 -----------------*/
+   .top-contact-info .btn{
+      padding: 8px 20px;
+   }
+   /*---------------- index 4 ------------*/
+   .ts-header-transparent{
+      .menu-btn{
+         .btn {
+            border-radius: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+            padding: 5px 8px;
+            height: 44px;
+         }
+      }
+   }
+   .ts-about{
+      .box-skew-left{
+         width: 100%;
+      }
+      .box-skew-left:after {
+         left: -65px;
+     }
+   }
+}

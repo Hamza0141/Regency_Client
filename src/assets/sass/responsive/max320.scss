@@ -1,0 +1,78 @@
+@media (max-width: 478px) {
+   /* Navbar */
+   section,
+   .section {
+      position: relative;
+      z-index: 1;
+      padding: 60px 0px;
+   }
+   .header-default .header-angle .navbar-toggler {
+      margin-left: 0;
+   }
+   .working-box-wrapper .working-single-box:after {
+      display: none;
+   }
+   .top-contact-info li:last-child {
+      margin-top: 10px;
+   }
+   .ts-logo img {
+      max-width: inherit;
+   }
+   /* About Us Page */
+   .ts-history-tab {
+      .nav-tabs {
+         .nav-item {
+            margin-bottom: 5px;
+            width: 92%;
+         }
+      }
+      .ts-tab.nav-tabs .nav-link {
+         width: 85%;
+      }
+      .tab-pane {
+         margin-top: 20px;
+      }
+   } // History tab
+   .ts-fun-facts {
+      .box-skew-sm-right {
+         padding-left: 20px;
+         padding-right: 0px;
+      }
+   } // Fun Facts
+   /* Service */
+   .ts-appointment {
+      margin-top: 50px;
+      padding-left: 10px;
+   }
+   .service-appointnent {
+      margin-bottom: 50px;
+   }
+   ul.unstyled.ts-rating {
+      margin-top: -4px;
+      font-size: 14px;
+   }
+   /*--- news ---*/
+   .post-tags {
+      a {
+         display: block;
+         margin-bottom: 10px;
+      }
+   }
+   .author-box {
+      padding: 40px 17px 20px;
+   }
+   .post-navigation {
+      display: block;
+   }
+   .post-navigation::after  {
+      display: none;
+   }
+   .comments-list .comments-reply {
+      padding-left: 0;
+  }
+
+  /*- testimonial*/
+  .testimonial-slide .testimonial-item {
+     max-width: 300px;
+  }
+}

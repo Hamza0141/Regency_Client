@@ -1,0 +1,713 @@
+/* Custom styles for the garage app */
+.signin-signout {
+  padding: 0 55px;
+}
+.signin-signout a {
+  color: #fff;
+}
+/* Placeholder style */
+input::placeholder,
+textarea::placeholder {
+  font-weight: 400;
+  opacity: 0.3;
+  color: #000;
+  font-style: italic;
+}
+/* Header */
+.main-header {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 5px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+/* Admin pages */
+.admin-left-side {
+ background:#070f3e;
+}
+.admin-right-side {
+  background: rgb(246 247 250);
+  border-bottom: 1px solid #dfe2ec;
+}
+.admin-menu {
+ background:#070f3e;
+  /* background-color: #222b48; */
+  padding: 10px 20px;
+}
+.admin-left-side .list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #3c404c;
+  border-color: #3c404c;
+  border-bottom: 1px solid #616675;
+}
+.admin-menu h2 {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(249, 249, 249);
+  display: block;
+  text-decoration: none;
+}
+.admin-left-side.col-md-3 {
+  padding: 0;
+}
+.admin-left-side .list-group-item {
+   background:#070f3e;
+  /* background-color: #222b48; */
+  border-bottom: 1px solid #616675;
+  margin-bottom: 0px;
+  color: #fff;
+}
+.admin-left-side a {
+  color: #a2a5ad;
+}
+.admin-left-side a:hover {
+  color: #fff;
+}
+.validation-error {
+  color: red;
+  float: right;
+  font-style: italic;
+}
+select.custom-select-box {
+  border-right: 25px solid #dddddd;
+}
+.edit-delete-icons a {
+  color: #0a1436;
+  padding: 0 10px;
+}
+input:disabled {
+  background-color: #ecedef !important;
+}
+.checkbox-in-form .form-check-label {
+  padding-left: 15px;
+  font-size: 1.3em;
+  font-weight: 300;
+  vertical-align: super;
+}
+.checkbox-in-form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.form-bold-header {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+/* Pagination */
+.pagination-wrapper {
+  margin-top: 30px;
+}
+.page-link {
+  padding: 0.5rem 1.75rem;
+  color: #fff;
+  background-color: #222b48;
+  border: 1px solid #dee2e6;
+}
+.page-link:hover {
+  color: #ffffff;
+  background-color: #ee0c0a;
+}
+.page-link span {
+  padding: 0 5px;
+}
+/* Search */
+.search-box {
+  margin-bottom: 20px;
+}
+.search-box input {
+  padding: 30px;
+}
+/* Table style */
+.table a {
+  color: #0a1436;
+  font-weight: 600;
+}
+/* Customer page */
+.history-block .text span {
+  font-weight: 600;
+  color: #000821;
+}
+
+/* Vehicles */
+.external-container {
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.contact-section .external-container .contact-title h2 {
+  font-size: 30px;
+}
+.external-container .contact-form .theme-btn span {
+  color: #fff;
+}
+.form-close {
+  color: red;
+  font-size: 1.5em;
+  margin-bottom: -3px;
+  text-align: end;
+  cursor: pointer;
+}
+.internal-form-wrapper {
+  width: 80%;
+}
+.vehicles-wrapper {
+  padding: 0px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.inner-padding {
+  padding: 20px;
+}
+/* Services */
+.services-wrapper {
+  margin-bottom: 20px;
+}
+.service-item {
+  background: #fff;
+  padding: 20px 20px 5px;
+  margin-bottom: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.service-item .edit-delete {
+  float: right;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+.service-item .edit-delete span {
+  padding: 15px;
+}
+.service-item h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* Order page */
+.faq-section.order-page .sear-form {
+  position: relative;
+  margin-bottom: 0px;
+}
+.order-page .search-box {
+  margin-bottom: 0px;
+}
+.filter-customers-wrapper {
+  padding: 20px;
+  background: #f8f8f8;
+  border: 1px solid #ced4da;
+  border-top: 0;
+}
+.selected-customer {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+.selected-customer h3 {
+  font-weight: 600;
+}
+.vehicles-to-choose {
+  margin-top: 40px;
+}
+.service-item.checkbox-holder {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 5px;
+}
+.checkbox-holder input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+}
+.theme-btn a {
+  color: #fff;
+}
+.no-customer {
+  margin-top: 20px;
+}
+.selected-customer .sec-title {
+  margin-bottom: 25px;
+}
+.selected-customer .form-close {
+  float: right;
+}
+.selected-customer .text span {
+  color: #000821;
+}
+.service-block-one .text span {
+  color: #000821;
+}
+.contact-form input[type="number"] {
+  display: block;
+  width: 100%;
+  line-height: 28px;
+  height: 56px;
+  font-size: 16px;
+  padding: 10px 22px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #dddddd;
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+.single-order .service-block-one h2 {
+  margin-bottom: 20px;
+}
+.order-status {
+  float: right;
+}
+.order-status span {
+  padding: 10px 25px;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.change-status {
+  cursor: pointer;
+}
+
+.info-holder {
+  display: flex;
+  align-items: center;
+}
+
+.icon-holder {
+  background-color: red;
+  border-radius: 50%;
+  padding: 40px;
+}
+
+.icon-holder {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+.toggle-btn {
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 6%;
+  font-size: 20px;
+  color: white;
+}
+
+.icon-rightData {
+  display: flex;
+  margin: 5% 0 5% 3%;
+}
+
+.rightData {
+  margin-left: 3%;
+}
+
+.rightData h2 {
+  font-weight: 800;
+}
+
+.rightData h3 {
+  font-weight: 600;
+}
+.cust_info {
+  display: flex;
+  margin-bottom: -15px;
+  margin-left: 1%;
+}
+
+.cust_Data_holder {
+  font-size: 15px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.form-Wrapper {
+  color: #fff;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 30px;
+  width: 80%;
+  justify-content: center;
+  margin: 0 14% 14%;
+}
+
+.new-form-wrapper {
+  display: flex;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #cccccc;
+  border: none;
+  cursor: pointer;
+}
+
+.form-Wrapper {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+.auto-container {
+  margin-left: 3%;
+}
+.vehicleInfo {
+  margin-top: 30px;
+}
+.customerInfo,
+.SelectedVehicleInfo,
+.service-wrapper,
+.additional_request {
+  border-radius: 10px;
+  padding: 10px;
+  /* margin-bottom: 2%; */
+  box-shadow: rgba(18, 116, 214, 0.2) 0px 8px 24px;
+}
+
+.cust-Key-value {
+  display: flex;
+  margin-bottom: -15px;
+  margin-left: 1%;
+}
+
+.cust-Key {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.customerInfo h3 {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 800;
+}
+.SelectedVehicleInfo h3 {
+  font-weight: 800;
+}
+.cust-value,
+.service-value,
+.owner-value,
+.cust_Data_value {
+  opacity: 0.7;
+}
+.service-wrapper {
+  padding-bottom: 3%;
+}
+.title-header {
+  font-weight: 800;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.services {
+  display: grid;
+  grid-template-columns: auto 1fr; /* The first column takes the content size, and the second column takes the remaining space */
+  align-items: center;
+  box-shadow: rgba(18, 116, 214, 0.2) 0px 8px 24px;
+  padding: 2%;
+}
+
+.checkbox-wrapper {
+  justify-self: end;
+  margin-right: 5%; /* Align the checkbox to the end of its grid cell */
+}
+
+.service-Key {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+.inputs {
+  margin-left: 2%;
+}
+.additional_request_input textarea {
+  width: 80%;
+  height: 150px;
+  border-radius: 10px;
+  border-color: #3c404c;
+  border-bottom: 1px solid #616675;
+  resize: vertical;
+}
+.priceInput input {
+  width: 80%;
+  height: 40px;
+  margin-top: 2%;
+  border-radius: 10px;
+  border-color: #3c404c;
+  border-bottom: 1px solid #616675;
+}
+.submitBotton {
+  margin: 2% 0 1% 2%;
+}
+.title-holder p {
+  margin-bottom: -5px;
+  opacity: 0.7;
+  font-size: smaller;
+}
+.titleName {
+  font-size: smaller;
+  margin-bottom: -5px;
+  font-weight: 600;
+}
+.order-detail-wrapper {
+  margin: 2%;
+  padding-left: 2%;
+}
+
+.order-detail-wrapper h3 {
+  margin-top: 10px;
+  padding: 15px 0 10px 0;
+  font-weight: 700;
+}
+
+.name-status-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status-holder {
+  margin-left: 45%;
+}
+
+.order-cus-vehicle {
+  display: flex;
+  width: 80%;
+  margin-left: 5%;
+}
+
+.owner-Key-value {
+  display: flex;
+  margin-bottom: -15px;
+  margin-left: 1%;
+}
+.owner-Key {
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.customer-data {
+  background-color: white;
+  width: 100%;
+  margin-right: 5%;
+  padding: 2%;
+  border-bottom: 3px solid #f00404;
+}
+
+.customer-vehicle-info {
+  background-color: #ffffff;
+  width: 100%;
+  margin-left: 5%;
+  padding: 2%;
+  border-bottom: 3px solid #f00404;
+}
+.requested-ser-wrapper {
+  width: 80%;
+  margin-left: 5%;
+  padding-left: 2%;
+  margin-top: 10px;
+  padding-right: 2%;
+  background-color: #f8f8f8;
+  border-bottom: 3px solid #f00404;
+}
+.make-holder {
+  margin-bottom: -10px;
+  opacity: 0.6;
+}
+
+.service-title-holder h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 3%;
+}
+
+.selected-services {
+  margin-left: 3%;
+}
+
+.service-name-disc {
+  margin-bottom: 2%;
+  padding-left: 2%;
+  border-radius: 5%;
+  box-shadow: rgba(17, 15, 12, 0.2) 5px 5px 5px 5px;
+}
+
+.service-name {
+  margin-bottom: -10px;
+  font-weight: 500;
+}
+
+.service-desc {
+  opacity: 0.7;
+}
+
+.requested-ser-wrapper {
+  margin-top: 20px;
+}
+
+
+
+.ordered-service-list {
+  margin-top: 10px;
+}
+
+.service-list-wrapper {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.service-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceName {
+  font-weight: bold;
+  margin-bottom: -8px;
+}
+
+.serviceDisc {
+  margin-top: 5px;
+}
+
+.ordered-service-list textarea {
+  width: 80%;
+  height: 35px;
+  resize: vertical;
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom: 3px solid #f00404;
+}
+
+.orderUpdate-Holder button {
+  margin-right: 10px;
+  border-radius: 10%;
+  padding: 5px 0 5px;
+  text-align: center;
+  width: fit-content;
+}
+
+.options {
+  margin-right: 10px;
+  border-radius: 10%;
+  padding: 5px 0 5px;
+  text-align: center;
+  width: fit-content;
+  border-bottom: 3px solid #f00404;
+}
+
+.status-holder {
+  border-radius: 10px;
+  padding: 0 10px;
+  text-align: center;
+  width: fit-content;
+}
+.status-identify{
+  border-radius: 10px;
+  margin-bottom: -10px;
+}
+
+
+.order-status {
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 5%;
+  text-align: center;
+  width: fit-content;
+}
+
+.completed {
+  background-color: green;
+  color: white;
+}
+
+.pending {
+  background-color: yellow;
+  color: black;
+}
+
+.in-progress {
+  background-color: gray;
+  color: white;
+}
+
+.received {
+  background-color: #ffffff;
+  color: black;
+}
+
+.canceled {
+  background-color: red;
+  color: white;
+}
+
+
+/* profile style */
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.profile-details {
+  text-align: center;
+}
+
+.profile-details h2 {
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  margin: 5px 0;
+}
+
+.toggleWrapper a{
+  color:black !important;
+}
+.subComponent{
+  margin: 0 5% 0 5%;
+}
+
+.buttonsHolder button{
+  display:flex;
+}
+.resetButton{
+margin: 2% 0 2%;
+background-color: transparent;
+font-style: italic;
+opacity: .7;
+}
+
+.not-found-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.not-found-title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.not-found-message {
+  font-size: 1.2rem;
+  color: #666;
+}
+
