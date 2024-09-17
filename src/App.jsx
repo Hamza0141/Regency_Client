@@ -33,7 +33,7 @@ import OrderDetailPge from './markup/Pages/Admin/OrderDetailPge';
 import { ToastContainer } from "react-toastify";
 
 //customer's order page
-import OrderDetail from './markup/components/Admin/OrderDetail/OrderDetail';
+import CustomerOrderPage from './markup/Pages/Admin/CustomerOrderPage';
 
 
 //route auth
@@ -65,6 +65,8 @@ function App() {
     <>
       <Header />
       <Routes>
+
+        {/* Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
@@ -73,38 +75,11 @@ function App() {
         <Route path="/unauthorized" element={<Unauthorized />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/admin/services" element={<Services />} />
-        <Route
-          path="/update-service/:serviceId"
-          element={<UpdateServicePage />}
-        />
-        <Route path="/admin/add-customer" element={<AddCustomer />} />
-        <Route path="/admin/customers" element={<Customers />} />
-        <Route
-          path="/update-customer/:customer_id"
-          element={<UpdateCustomerPage />}
-        />
-        <Route
-          path="/customer-profile/:customer_id"
-          element={<CustomerProfilePage />}
-        />
-        <Route path="/admin/profile" element={<ProfilePage />} />
 
+        {/* Common Routes */}
         <Route
-          path="/updatevehicle/:vehicleId"
-          element={<UpdateVehiclePage />}
-        />
-        <Route
-          path="/admin/add-employee"
-          element={
-            <PrivateAuthRoute roles={[3]}>
-              <AddEmployee />
-            </PrivateAuthRoute>
-          }
-        />
-        <Route path="/admin/employees" element={<Employees />} />
-        <Route
-          path="/update-employee/:employee_id"
-          element={<UpdateEmployeePage />}
+          path="/customer/order/detail/:hash"
+          element={<CustomerOrderPage />}
         />
         <Route path="/admin/order" element={<OrderPage />} />
         <Route path="/admin/orders" element={<OrdersPage />} />
@@ -113,7 +88,83 @@ function App() {
           element={<UpdateOrderPage />}
         />
         <Route path="/admin/order/detail/:hash" element={<OrderDetailPge />} />
-        <Route path="/customer/order/detail/:hash" element={<OrderDetail />} />
+
+
+        {/* Protected Routes */}
+        <Route
+          path="/update-service/:serviceId"
+          element={
+            <PrivateAuthRoute roles={[3, 2]}>
+              <UpdateServicePage />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
+          path="/admin/add-customer"
+          element={
+            <PrivateAuthRoute roles={[3, 2]}>
+              <AddCustomer />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
+          path="/admin/customers"
+          element={
+            <PrivateAuthRoute roles={[3, 2]}>
+              <Customers />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
+          path="/update-customer/:customer_id"
+          element={
+            <PrivateAuthRoute roles={[3, 2]}>
+              <UpdateCustomerPage />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
+          path="/customer-profile/:customer_id"
+          element={
+            <PrivateAuthRoute roles={[3, 2]}>
+              <CustomerProfilePage />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route path="/admin/profile" element={<ProfilePage />} />
+
+        <Route
+          path="/updatevehicle/:vehicleId"
+          element={
+            <PrivateAuthRoute roles={[3, 2]}>
+              <UpdateVehiclePage />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
+          path="/admin/add-employee"
+          element={
+            <PrivateAuthRoute roles={[2, 3]}>
+              <AddEmployee />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
+          path="/admin/employees"
+          element={
+            <PrivateAuthRoute roles={[2, 3]}>
+              <Employees />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
+          path="/update-employee/:employee_id"
+          element={
+            <PrivateAuthRoute roles={[3, 2]}>
+              <UpdateEmployeePage />
+            </PrivateAuthRoute>
+          }
+        />
       </Routes>
       <Footer />
       <ToastContainer />
