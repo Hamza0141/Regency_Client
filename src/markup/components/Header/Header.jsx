@@ -1,17 +1,25 @@
-import React from "react";
+import React,{ useState } from "react";
 import Logo from "../../../assets/images/logo/logo.png"
+import logotoggler from "../../../assets/images/icons/icon-bar.png";
 import { useAuth } from "../../../Contexts/AuthContext";
 import { logOut } from "../../../services/login.service";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const { isLogged, setIsLogged, employee } = useAuth();
+  const [showRoutes, setShowRoutes] = useState(false);
    const logOutUser = () => {
      // Call the logout function from the login service
      logOut();
      // Set the isLogged state to false
      setIsLogged(false);
    };
+
+      
+
+      const toggleRoutes = () => {
+        setShowRoutes(!showRoutes);
+      };
   return (
     <>
       {/* Top Bar */}
@@ -28,7 +36,7 @@ const Header = () => {
                 ) : (
                   <div className="top-bar-event ts-top">
                     <i className="icon icon-clock"></i>
-                    <span>We&apos;re Open: Mon - Sat 8:00 - 18:00</span>
+                    <span>Open: Mon - Sat 9:00 AM - 5:30 Pm</span>
                   </div>
                 )}
               </div>
@@ -43,16 +51,54 @@ const Header = () => {
       {/* Header */}
       <header className="ts-header header-default">
         <div className="ts-logo-area">
+            <div className="toggleWrapper col-md-8 col-sm-8 navbar-toggler">
+              <div className="toggleImg">
+                <img src={logotoggler} onClick={toggleRoutes} alt="" />
+              </div>
+              {showRoutes && (
+                <div className="menuList">
+                  <ul>
+                    <li>
+                      <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                      <Link to="/about">About Us</Link>
+                    </li>
+                    <li>
+                      <Link to="/offerservice">Services</Link>
+                    </li>
+                    <li>
+                      <Link to="/contact">Contact Us</Link>
+                    </li>
+                    {isLogged ? (
+                      <>
+                        <div>
+                          <Link to="/dashboard">Dashboard</Link>
+                        </div>
+                        <div>
+                          <Link to="/" onClick={logOut}>
+                            Log out
+                          </Link>
+                        </div>
+                      </>
+                    ) : (
+                      <div>
+                        <Link to="/login">Login</Link>
+                      </div>
+                    )}
+                  </ul>
+                </div>
+              )}
+            </div>
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-4 col-sm-4">
                 <Link to="/" className="ts-logo">
-       
                   <img src={Logo} alt="logo" />
                 </Link>
               </div>
 
-              <div className="col-md-8 col-sm-8 float-right">
+              <div className="col-md-8 col-sm-8 float-right contactInfo">
                 <ul className="top-contact-info">
                   <li>
                     <span>
@@ -60,7 +106,7 @@ const Header = () => {
                     </span>
                     <div className="info-wrapper">
                       <p className="info-title">Call us</p>
-                      <p className="info-subtitle">+913 948 2050</p>
+                      <p className="info-subtitle">+816 920 6002</p>
                     </div>
                   </li>
                   <li>
@@ -69,7 +115,7 @@ const Header = () => {
                     </span>
                     <div className="info-wrapper">
                       <p className="info-title">Send us mail</p>
-                      <p className="info-subtitle">query@finances.com</p>
+                      <p className="info-subtitle">kcregencyauto@gmail.com</p>
                     </div>
                   </li>
                   <li>
@@ -86,17 +132,6 @@ const Header = () => {
         <div className="header-angle">
           <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
               <div
                 className="collapse navbar-collapse justify-content-end ts-navbar"
                 id="navbarSupportedContent"

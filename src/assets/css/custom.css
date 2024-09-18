@@ -679,8 +679,11 @@ input:disabled {
   margin: 5px 0;
 }
 
-.toggleWrapper a{
-  color:black !important;
+.toggleWrapper{
+  display: flex;
+}
+.toggleImg{
+  margin: 10% 10% 0 0;
 }
 .subComponent{
   margin: 0 5% 0 5%;

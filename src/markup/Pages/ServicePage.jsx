@@ -32,14 +32,14 @@ function ServicePage() {
             <div className="col-lg-4 col-md-12">
               <div className="ts-service-wrapper">
                 <span className="service-img">
-                  <img className="img-fluid" src={serviceImage1} alt="" />
+                  <img className="img-fluid" src={serviceImage6} alt="" />
                 </span>
                 <div className="service-content">
                   <div className="service-icon">
                     <i className="icon-engine"></i>
                   </div>
                   <h3>
-                    <Link to="/offerservice">Engine Diagnostics</Link>
+                    <Link to="/offerservice">Engine And Transmission</Link>
                   </h3>
                   <p>
                     We utilize advanced diagnostic tools to pinpoint engine
@@ -143,19 +143,18 @@ function ServicePage() {
             <div className="col-lg-4 col-md-12">
               <div className="ts-service-wrapper">
                 <span className="service-img">
-                  <img className="img-fluid" src={serviceImage6} alt="" />
+                  <img className="img-fluid" src={serviceImage1} alt="" />
                 </span>
                 <div className="service-content">
                   <div className="service-icon">
                     <i className="icon-performance"></i>
                   </div>
                   <h3>
-                    <Link to="/offerservice">Performance Upgrades</Link>
+                    <Link to="/offerservice">Alignment And mufflers</Link>
                   </h3>
                   <p>
-                    Boost your vehicle’s power and efficiency with our range of
-                    performance upgrade services, designed to enhance your
-                    driving experience.
+                    With our wheel alignment services, we improve
+                    handling and extend tire lifespan. Our muffler services ensure your exhaust system operates efficiently.
                   </p>
                 </div>
               </div>

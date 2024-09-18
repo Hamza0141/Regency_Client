@@ -3,7 +3,7 @@ import banner from "../../assets/images/slider/slider-1.jpg";
 import featureImg from "../../assets/images/why_choose_us_img.png";
 import aboutImg1 from "../../assets/images/about/about-img1.jpg";
 // import aboutImg2 from "../../assets/images/about/about_img.png";
-import testimonial from "../../assets/images/testimonial/quote_profile.png"
+
 import newsLater from "../../assets/images/we_offer_img.jpg";
 
 import ServicePage from "./ServicePage";
@@ -276,9 +276,9 @@ function Home() {
                 <div id="contact-form" className="form-container col-lg-12">
                   <form
                     className="contactMe ts-main-form"
-                    action="contactme/service-contact-form.php"
-                    method="POST"
-                    encType="multipart/form-data"
+                    // action="contactme/service-contact-form.php"
+                    // method="POST"
+                    // encType="multipart/form-data"
                   >
                     <section>
                       <div className="form-row">
@@ -386,7 +386,7 @@ function Home() {
                         </span>
                       </div>
                       <div className="testimonial-footer">
-                        <img src={testimonial} alt="" className="img-fluid" />
+                        
                         <div className="client-info">
                           <h3 className="client-name">Donald Gonzales</h3>
                           <span className="client-desig">Lead Painter</span>
@@ -412,9 +412,9 @@ function Home() {
                   </h2>
                   <form
                     className="contactMe newsletter-form"
-                    action="contactme/newsletter-form.php"
-                    method="POST"
-                    encType="multipart/form-data"
+                    // action="contactme/newsletter-form.php"
+                    // method="POST"
+                    // encType="multipart/form-data"
                   >
                     <section>
                       <div className="form-row">

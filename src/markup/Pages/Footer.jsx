@@ -1,19 +1,16 @@
 import React from "react";
-import Logo from "../../assets/images/logo/logo-white.png";
 
 
 function Footer() {
   return (
     <footer className="footer" id="footer">
-      
-
       <div className="footer-main">
         <div className="container">
           <div className="row">
             <div className="col-lg col-md footer-widget footer-about">
               <div className="footer-logo">
                 <a href="index.html">
-                  <img className="img-fluid"  alt="" />
+                  <img className="img-fluid" alt="" />
                 </a>
               </div>
               <p>
@@ -85,27 +82,27 @@ function Footer() {
               <ul className="unstyled service-time">
                 <li>
                   <span>Monday</span>
-                  <span>7.00 - 16.30</span>
+                  <span>9:00 Am - 5:30 Pm</span>
                 </li>
                 <li>
                   <span>Tuesday</span>
-                  <span>7.00 - 16.00</span>
+                  <span>9:00 Am - 5:30 Pm</span>
                 </li>
                 <li>
                   <span>Wednesday</span>
-                  <span>7.00 - 16.20</span>
+                  <span>9:00 Am - 5:30 Pm</span>
                 </li>
                 <li>
                   <span>Thursday</span>
-                  <span>7.00 - 16.00</span>
+                  <span>9:00 Am - 5:30 Pm</span>
                 </li>
                 <li>
                   <span>Friday</span>
-                  <span>7.00 - 16.20</span>
+                  <span>9:00 Am - 5:30 Pm</span>
                 </li>
                 <li>
                   <span>Saturday</span>
-                  <span>7.00 - 16.10</span>
+                  <span>9:00 Am - 3:00 Pm</span>
                 </li>
               </ul>
             </div>
@@ -113,12 +110,12 @@ function Footer() {
         </div>
       </div>
 
-      <div className="copyright">
+      {/* <div className="copyright">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12">
               <div className="copyright-info">
-                <span>Copyright © 2018 Automobile. All Rights Reserved.</span>
+                <span>Copyright © 2024 Regency. All Rights Reserved.</span>
               </div>
             </div>
             <div className="col-lg-6 col-md-12">
@@ -153,7 +150,7 @@ function Footer() {
             <i className="fa fa-angle-double-up"></i>
           </button>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

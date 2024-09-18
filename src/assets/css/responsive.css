@@ -11,6 +11,9 @@
   .box-skew-right img {
     right: 188px;
   }
+		.toggleWrapper{
+		display: none;
+	}
 }
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) {
@@ -18,6 +21,9 @@
   .ts-indicator {
     display: none;
   }
+  		.toggleWrapper{
+		display: none;
+	}
 }
 /* Medium Devices, Desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -105,9 +111,22 @@
   .ts-about .box-skew-left:after {
     left: -65px;
   }
+  		.toggleWrapper{
+		display: none;
+	}
 }
 /* Small Devices, Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
+  	.toggleWrapper{
+		display: block;
+		  
+	}
+  .contactInfo{
+    display: none;
+  }
+   .header-angle{
+    display: none;
+  }
   .navbar-nav .nav-item .dropdown-menu {
     -webkit-transition: all 0s;
     transition: all 0s;
@@ -532,6 +551,13 @@
 /* Small Devices Potrait */
 @media (max-width: 767px) {
   /* Topbar */
+
+   .contactInfo{
+    display: none;
+  }
+   .header-angle{
+    display: none;
+  }
   .ts-logo img {
     max-width: 162px;
   }
@@ -1272,6 +1298,12 @@
 /* Custom, iPhone Retina */
 @media (max-width: 478px) {
   /* Navbar */
+   .contactInfo{
+    display: none;
+  }
+  .header-angle{
+    display: none;
+  }
   section,
   .section {
     position: relative;
