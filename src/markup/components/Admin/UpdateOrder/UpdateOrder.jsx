@@ -29,7 +29,7 @@ function UpdateOrder({ id }) {
   const [notesForCustomer, setNotesForCustomer] = useState(
     order?.notes_for_customer || ""
   );
-
+console.log(order?.customer_email, order?.order_status);
   const [customerEditFlag, setCustomerEditFlag] = useState(false);
   const [internalEditFlag, setInternalEditFlag] = useState(false);
   const { employee } = useAuth();
@@ -84,6 +84,7 @@ function UpdateOrder({ id }) {
       try {
         const formData = {
           order_status: selectedOrderStatus,
+          customer_email: order?.customer_email,
         };
 
         const response = await updateOrderStatus(id, formData);

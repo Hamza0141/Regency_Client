@@ -32,6 +32,8 @@ function Order() {
     price: 0,
   });
 
+
+
   const navigator = useNavigate();
 
   const { employee } = useAuth();
@@ -128,6 +130,7 @@ const handleEmployeeChange = (event) => {
       assigned_employee_id: selectedEmployee,
       order_status: "Received",
       service_status: "In Progress",
+      customer_email: singleCustomer?.customer_email,
     };
     console.log(orderData);
 
